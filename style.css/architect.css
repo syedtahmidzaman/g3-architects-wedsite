@@ -183,15 +183,55 @@ main > section{
  }
 
 
+/* .features2 style  */
 
 
+#features2-title-border{
+    border-left: 5px solid  #FF900E;
+    padding-left: 20px;
+}
+.features-card-title{
+    font-weight: 600px;
+    font-size: 1.25rem;
+}
+
+.features-card{
+
+     padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;  
+}
+.features{
+    gap: 140px;
+
+}
+
+
+.features-img img{
+    width: 100%;
+}
+
+#Experience-btn{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500px;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+#Experience-year{
+    font-size: 4rem;
+    font-weight: 700px;
+}
 
 /* .responsive medoia qurery */
 
 @media screen and (max-width: 576px ) {
     .navbar, 
     .nav-links, 
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     
@@ -208,13 +248,19 @@ main > section{
     .our-features{
         margin-left: 20px;
     }
+
+#Experience-btn{
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
 }
 
 /* .medium size device */
 
 @media screen and (min-width: 576px) and    (max-width: 992px) {
 
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .our-features{
@@ -229,4 +275,11 @@ main > section{
 
     }
     
+    #Experience-btn{
+
+    margin-top: 20px;
+    margin-left: 270px;
+    align-items: center;
+}
+
 }
